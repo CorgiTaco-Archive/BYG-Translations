@@ -110,6 +110,7 @@ public class MinecraftLocaleCodes {
         "ta_in",
         "th_th",
         "tl_ph",
+        "pi_pi",
         "tlh_aa",
         "tok",
         "tr_tr",
