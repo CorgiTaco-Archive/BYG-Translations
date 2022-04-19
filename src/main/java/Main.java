@@ -71,7 +71,7 @@ public class Main {
             Path localeFilePath = LOCALE_FILE_PATH.apply(localeCode);
             File file = localeFilePath.toFile();
             if (file.exists()) { // Append any existing translations.
-                combined.putAll(GSON.fromJson(new BufferedReader(new FileReader(file)), MAP_TYPE.get()));
+                combined.putAll(GSON.fromJson(new BufferedReader(new FileReader(file, StandardCharsets.UTF_8)), MAP_TYPE.get()));
             }
 
             Files.createDirectories(localeFilePath.getParent());
